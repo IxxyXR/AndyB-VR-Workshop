@@ -4,18 +4,17 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: moss-min
+  m_Name: water
   m_Shader: {fileID: 4800000, guid: 534b44f15d8e80847a1e825dedc7c581, type: 3}
   m_ShaderKeywords: BACKSOLID BOTTOMSOLID FRONTSOLID LEFTSOLID RIGHTSOLID TOPSOLID
-    _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL _GRADSETTINGS_D_USE_GLOBAL
-    _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL _GRADSETTINGS_R_USE_GLOBAL
-    _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_AO _LMAPENABLE_ON _SHADING_B_SOLID_COLOR
+    UNITY_FOG _ALPHAPREMULTIPLY_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL
+    _GRADSETTINGS_D_USE_GLOBAL _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL
+    _GRADSETTINGS_R_USE_GLOBAL _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_ADD _SHADING_B_SOLID_COLOR
     _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR _SHADING_R_SOLID_COLOR
-    _SHADING_T_SOLID_COLOR _SHOWAO_ON _SHOWBACK_ON _SHOWBOTTOM_ON _SHOWCOLORCORRECTION_ON
-    _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON _SHOWLMAP_ON _SHOWRIGHT_ON
-    _SHOWTEXTURE_ON _SHOWTOP_ON _UNITYFOGENABLE_ON
+    _SHADING_T_SOLID_COLOR _SHOWBACK_ON _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON
+    _SHOWLEFT_ON _SHOWRIGHT_ON _SHOWTEXTURE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -69,6 +68,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ShoreTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AOEnable: 1
     - _AOPower: 0
@@ -80,12 +83,11 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DontMix: 0
-    - _DstBlend: 0
-    - _Exponent: 1
+    - _DstBlend: 10
     - _FogHeight: 10
     - _FogYStartPos: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 1
     - _GlossyReflections: 1
     - _GradSettings_B: 0
     - _GradSettings_D: 0
@@ -102,13 +104,12 @@ Material:
     - _GradientHeight_T: 1
     - _GradientSpace: 0
     - _HFogEnable: 0
-    - _Intensity: 1
     - _LMPower: 0
     - _LmapBlendingMode: 2
     - _LmapEnable: 1
     - _MainTexturePower: 0
     - _Metallic: 0
-    - _Mode: 0
+    - _Mode: 3
     - _OcclusionStrength: 1
     - _OtherSettings: 0
     - _Parallax: 0.02
@@ -129,6 +130,7 @@ Material:
     - _Shading_L: 1
     - _Shading_R: 1
     - _Shading_T: 1
+    - _Shininess: 10
     - _ShowAO: 1
     - _ShowAmbientSettings: 0
     - _ShowBack: 1
@@ -147,20 +149,22 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UnityFogEnable: 0
-    - _ZWrite: 1
+    - _UnityFogEnable: 1
+    - _ZWrite: 0
+    - _isInnerAlphaBlendOrColor: 0
     m_Colors:
     - _AOColor: {r: 1, g: 1, b: 1, a: 1}
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0, b: 1, a: 0}
-    - _Color1_B: {r: 0.4392157, g: 0.6784314, b: 0.496581, a: 1}
-    - _Color1_D: {r: 0.6901961, g: 0.7647059, b: 0.7000634, a: 1}
-    - _Color1_F: {r: 0.4117647, g: 0.7372549, b: 0.5355339, a: 1}
-    - _Color1_L: {r: 0.38039216, g: 0.67058825, b: 0.4453951, a: 1}
-    - _Color1_R: {r: 0.4509804, g: 0.85882354, b: 0.47313067, a: 1}
-    - _Color1_T: {r: 0.66522783, g: 0.9339623, b: 0.6853372, a: 1}
-    - _Color2: {r: 1, g: 1, b: 0, a: 0}
+    - _BaseColor: {r: 0.53999996, g: 0.95, b: 0.98999995, a: 0.5}
+    - _BumpDirection: {r: 1, g: 1, b: -1, a: 1}
+    - _BumpTiling: {r: 1, g: 1, b: -2, a: 3}
+    - _Color: {r: 0.33490568, g: 0.8465167, b: 1, a: 0.38431373}
+    - _Color1_B: {r: 0.3721075, g: 0.6415305, b: 0.6981132, a: 1}
+    - _Color1_D: {r: 0.503916, g: 0.6551677, b: 0.7169812, a: 1}
+    - _Color1_F: {r: 0.375, g: 0.49852937, b: 0.5, a: 1}
+    - _Color1_L: {r: 0.2805714, g: 0.5485283, b: 0.6132076, a: 1}
+    - _Color1_R: {r: 0.43609828, g: 0.5201139, b: 0.5283019, a: 1}
+    - _Color1_T: {r: 0.23553754, g: 0.6320754, b: 0.62779874, a: 1}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_F: {r: 1, g: 1, b: 1, a: 1}
@@ -168,7 +172,8 @@ Material:
     - _Color2_R: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_T: {r: 1, g: 1, b: 1, a: 1}
     - _Color_Fog: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.412, g: 0.412, b: 0.412, a: 1}
+    - _Foam: {r: 0.1, g: 0.375, b: 0, a: 0}
     - _GizmoPosition_B: {r: 0, g: 0, b: 10, a: 10}
     - _GizmoPosition_D: {r: 0, g: 0, b: 10, a: 10}
     - _GizmoPosition_F: {r: 0, g: 0, b: 10, a: 10}
@@ -182,8 +187,9 @@ Material:
     - _GradientYStartPos_G: {r: 0, g: 0, b: 0, a: 0}
     - _GradientYStartPos_L: {r: 0, g: 0, b: 0, a: 0}
     - _GradientYStartPos_R: {r: 0, g: 0, b: 0, a: 0}
+    - _InvFadeParemeter: {r: 0.2, g: 0.39, b: 0.5, a: 1}
     - _LMColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0.09999997, g: 0.09999997, b: 0.09999997, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UpVector: {r: 0, g: 1, b: 0, a: 0}

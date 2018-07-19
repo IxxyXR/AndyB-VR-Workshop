@@ -4,18 +4,18 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: white-min
+  m_Name: moss-min
   m_Shader: {fileID: 4800000, guid: 534b44f15d8e80847a1e825dedc7c581, type: 3}
   m_ShaderKeywords: BACKSOLID BOTTOMSOLID FRONTSOLID LEFTSOLID RIGHTSOLID TOPSOLID
-    _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL _GRADSETTINGS_D_USE_GLOBAL
-    _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL _GRADSETTINGS_R_USE_GLOBAL
-    _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_AO _LMAPENABLE_ON _SHADING_B_SOLID_COLOR
-    _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR _SHADING_R_SOLID_COLOR
-    _SHADING_T_SOLID_COLOR _SHOWAO_ON _SHOWBACK_ON _SHOWBOTTOM_ON _SHOWCOLORCORRECTION_ON
-    _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON _SHOWLMAP_ON _SHOWRIGHT_ON
-    _SHOWTEXTURE_ON _SHOWTOP_ON _UNITYFOGENABLE_ON
+    UNITY_FOG _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL
+    _GRADSETTINGS_D_USE_GLOBAL _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL
+    _GRADSETTINGS_R_USE_GLOBAL _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_AO _LMAPENABLE_ON
+    _SHADING_B_SOLID_COLOR _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR
+    _SHADING_R_SOLID_COLOR _SHADING_T_SOLID_COLOR _SHOWAO_ON _SHOWBACK_ON _SHOWBOTTOM_ON
+    _SHOWCOLORCORRECTION_ON _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON
+    _SHOWLMAP_ON _SHOWRIGHT_ON _SHOWTEXTURE_ON _SHOWTOP_ON _UNITYFOGENABLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -147,19 +147,19 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UnityFogEnable: 0
+    - _UnityFogEnable: 1
     - _ZWrite: 1
     m_Colors:
     - _AOColor: {r: 1, g: 1, b: 1, a: 1}
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 1, g: 0, b: 1, a: 0}
-    - _Color1_B: {r: 0.8, g: 0.87369835, b: 0.8862745, a: 1}
-    - _Color1_D: {r: 0.7983268, g: 0.83692944, b: 0.8679245, a: 1}
-    - _Color1_F: {r: 0.7781684, g: 0.8207547, b: 0.81940705, a: 1}
-    - _Color1_L: {r: 0.77265036, g: 0.9039826, b: 0.9150943, a: 1}
-    - _Color1_R: {r: 0.70848167, g: 0.80841494, b: 0.8207547, a: 1}
-    - _Color1_T: {r: 0.9622642, g: 0.9577252, b: 0.9577252, a: 1}
+    - _Color1_B: {r: 0.4392157, g: 0.6784314, b: 0.496581, a: 1}
+    - _Color1_D: {r: 0.6901961, g: 0.7647059, b: 0.7000634, a: 1}
+    - _Color1_F: {r: 0.4117647, g: 0.7372549, b: 0.5355339, a: 1}
+    - _Color1_L: {r: 0.38039216, g: 0.67058825, b: 0.4453951, a: 1}
+    - _Color1_R: {r: 0.4509804, g: 0.85882354, b: 0.47313067, a: 1}
+    - _Color1_T: {r: 0.66522783, g: 0.9339623, b: 0.6853372, a: 1}
     - _Color2: {r: 1, g: 1, b: 0, a: 0}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}

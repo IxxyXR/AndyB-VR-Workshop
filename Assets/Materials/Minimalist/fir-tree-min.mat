@@ -4,18 +4,18 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: rock-min
+  m_Name: fir-tree-min
   m_Shader: {fileID: 4800000, guid: 534b44f15d8e80847a1e825dedc7c581, type: 3}
   m_ShaderKeywords: BACKSOLID BOTTOMSOLID FRONTSOLID LEFTSOLID RIGHTSOLID TOPSOLID
-    _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL _GRADSETTINGS_D_USE_GLOBAL
-    _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL _GRADSETTINGS_R_USE_GLOBAL
-    _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_AO _LMAPENABLE_ON _SHADING_B_SOLID_COLOR
-    _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR _SHADING_R_SOLID_COLOR
-    _SHADING_T_SOLID_COLOR _SHOWAO_ON _SHOWBACK_ON _SHOWBOTTOM_ON _SHOWCOLORCORRECTION_ON
-    _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON _SHOWLMAP_ON _SHOWRIGHT_ON
-    _SHOWTEXTURE_ON _SHOWTOP_ON _UNITYFOGENABLE_ON
+    UNITY_FOG _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL
+    _GRADSETTINGS_D_USE_GLOBAL _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL
+    _GRADSETTINGS_R_USE_GLOBAL _GRADSETTINGS_T_USE_GLOBAL _HFOGENABLE_ON _LMAPBLENDINGMODE_ADD
+    _SHADING_B_SOLID_COLOR _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR
+    _SHADING_R_SOLID_COLOR _SHADING_T_SOLID_COLOR _SHOWAO_ON _SHOWBACK_ON _SHOWBOTTOM_ON
+    _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON _SHOWRIGHT_ON _SHOWTEXTURE_ON
+    _SHOWTOP_ON _UNITYFOGENABLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -81,7 +81,6 @@ Material:
     - _DetailNormalMapScale: 1
     - _DontMix: 0
     - _DstBlend: 0
-    - _Exponent: 1
     - _FogHeight: 10
     - _FogYStartPos: 0
     - _GlossMapScale: 1
@@ -102,7 +101,6 @@ Material:
     - _GradientHeight_T: 1
     - _GradientSpace: 0
     - _HFogEnable: 0
-    - _Intensity: 1
     - _LMPower: 0
     - _LmapBlendingMode: 2
     - _LmapEnable: 1
@@ -147,20 +145,18 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UnityFogEnable: 0
+    - _UnityFogEnable: 1
     - _ZWrite: 1
     m_Colors:
     - _AOColor: {r: 1, g: 1, b: 1, a: 1}
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0, b: 1, a: 0}
-    - _Color1_B: {r: 0.78889483, g: 0.8113208, b: 0.753916, a: 1}
-    - _Color1_D: {r: 0.7729759, g: 0.75881094, b: 0.7924528, a: 1}
-    - _Color1_F: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
-    - _Color1_L: {r: 0.6452474, g: 0.7075472, b: 0.63746, a: 1}
-    - _Color1_R: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
-    - _Color1_T: {r: 0.8962264, g: 0.81590426, b: 0.81590426, a: 1}
-    - _Color2: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 0.23918656, g: 0.4056604, b: 0.34454975, a: 1}
+    - _Color1_B: {r: 0.32809716, g: 0.6886792, b: 0.4963688, a: 1}
+    - _Color1_D: {r: 0.28439835, g: 0.7830189, b: 0.39836887, a: 1}
+    - _Color1_F: {r: 0.16470589, g: 0.5566037, b: 0.4161118, a: 1}
+    - _Color1_L: {r: 0.3226237, g: 0.5471698, b: 0.43415326, a: 1}
+    - _Color1_R: {r: 0.1689213, g: 0.49056602, b: 0.29671764, a: 1}
+    - _Color1_T: {r: 0.31728372, g: 0.5849056, b: 0.406491, a: 1}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_F: {r: 1, g: 1, b: 1, a: 1}
@@ -186,4 +182,3 @@ Material:
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0.09999997, g: 0.09999997, b: 0.09999997, a: 1}
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UpVector: {r: 0, g: 1, b: 0, a: 0}
